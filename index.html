@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glow & Scent | Premium Scented Candles</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: "#FFFDF8",
+                        pink: "#FF6FAE",
+                        peach: "#FF9B71",
+                        yellow: "#FFD95A",
+                        purple: "#9B7BFF",
+                        blue: "#62C8FF",
+                        green: "#72D6A5",
+                        dark: "#25212B"
+                    },
+
+                    fontFamily: {
+                        sans: ["DM Sans", "sans-serif"],
+                        serif: ["Playfair Display", "serif"]
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background: #FFFDF8;
+            color: #25212B;
+        }
+
+        .hero-gradient {
+            background:
+                radial-gradient(circle at 15% 20%, rgba(255, 111, 174, .35), transparent 28%),
+                radial-gradient(circle at 85% 20%, rgba(98, 200, 255, .35), transparent 28%),
+                radial-gradient(circle at 50% 90%, rgba(255, 217, 90, .35), transparent 30%),
+                #FFFDF8;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, .88);
+            backdrop-filter: blur(15px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(
+                90deg,
+                #FF5C9D,
+                #FF8A65,
+                #9B7BFF
+            );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .floating {
+            animation: float 5s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        .product-card {
+            transition: all .3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .blob {
+            position: absolute;
+            border-radius: 999px;
+            filter: blur(1px);
+            opacity: .6;
+        }
+    </style>
+</head>
+
+
+<body class="font-sans antialiased">
+
+    <!-- ================= ANNOUNCEMENT BAR ================= -->
+
+    <div class="bg-dark text-white text-center py-3 px-4 text-sm font-semibold">
+        ✨ FREE SHIPPING ON ORDERS ABOVE ₹999
+        <span class="mx-2 text-yellow">•</span>
+        Hand-poured with love
+    </div>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="sticky top-0 z-50 glass border-b border-pink/10">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between">
+
+            <!-- LOGO -->
+
+            <a href="#" class="flex items-center gap-3">
+
+                <div class="w-11 h-11 rounded-2xl bg-pink flex items-center justify-center text-white shadow-lg">
+                    <i class="fa-solid fa-fire-flame-curved text-xl"></i>
+                </div>
+
+                <div>
+                    <div class="font-serif text-2xl font-bold text-dark">
+                        Glow & Scent
+                    </div>
+
+                    <div class="text-[10px] uppercase tracking-[.25em] font-bold text-pink">
+                        Scented Candle Studio
+                    </div>
+                </div>
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-bold">
+
+                <a href="#shop" class="hover:text-pink transition">
+                    Shop
+                </a>
+
+                <a href="#about" class="hover:text-pink transition">
+                    Our Story
+                </a>
+
+                <a href="#gifting" class="hover:text-pink transition">
+                    Gifting
+                </a>
+
+                <a href="#reviews" class="hover:text-pink transition">
+                    Reviews
+                </a>
+
+                <a href="#contact" class="hover:text-pink transition">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- ACTIONS -->
+
+            <div class="flex items-center gap-3">
+
+                <a href="https://wa.me/919876543210"
+                    target="_blank"
+                    class="hidden sm:flex items-center gap-2 bg-green text-white px-5 py-3 rounded-full font-bold text-sm shadow-md hover:scale-105 transition">
+
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+
+                    Order Now
+
+                </a>
+
+                <a href="#shop"
+                    class="bg-dark text-white px-5 py-3 rounded-full font-bold text-sm hover:bg-pink transition">
+
+                    Shop Candles
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero-gradient relative overflow-hidden">
+
+        <!-- Decorative blobs -->
+
+        <div class="blob w-40 h-40 bg-pink top-20 left-5"></div>
+
+        <div class="blob w-48 h-48 bg-blue top-32 right-5"></div>
+
+        <div class="blob w-32 h-32 bg-yellow bottom-10 left-1/3"></div>
+
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8 py-20 lg:py-28">
+
+            <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+                <!-- LEFT -->
+
+                <div class="relative z-10">
+
+                    <span class="inline-flex items-center gap-2 bg-white border border-pink/20 text-pink px-5 py-2 rounded-full text-sm font-bold shadow-sm">
+
+                        🕯️ 100% HAND-POURED CANDLES
+
+                    </span>
+
+
+                    <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mt-6">
+
+                        Light Up Your
+                        <span class="gradient-text">
+                            Happy Place.
+                        </span>
+
+                    </h1>
+
+
+                    <p class="text-lg text-dark/75 leading-relaxed mt-6 max-w-xl font-medium">
+
+                        Beautifully scented candles made to turn ordinary
+                        moments into cozy, colourful and unforgettable memories.
+
+                    </p>
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="flex flex-col sm:flex-row gap-4 mt-9">
+
+                        <a href="#shop"
+                            class="bg-pink text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-dark transition">
+
+                            Explore Candles
+                            <i class="fa-solid fa-arrow-right ml-2"></i>
+
+                        </a>
+
+
+                        <a href="#gifting"
+                            class="bg-white border-2 border-dark text-dark px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow transition">
+
+                            🎁 Explore Gifting
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- FEATURES -->
+
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-5 mt-12">
+
+                        <div>
+                            <div class="text-2xl">🌱</div>
+                            <div class="font-bold text-sm mt-1">
+                                Soy Wax
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="text-2xl">🌸</div>
+                            <div class="font-bold text-sm mt-1">
+                                Beautiful Scents
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="text-2xl">🔥</div>
+                            <div class="font-bold text-sm mt-1">
+                                Long Burn
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="text-2xl">🎁</div>
+                            <div class="font-bold text-sm mt-1">
+                                Gift Ready
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT HERO -->
+
+                <div class="relative flex justify-center items-center">
+
+                    <div class="absolute w-80 h-80 bg-pink/20 rounded-full blur-3xl"></div>
+
+                    <div class="relative floating">
+
+                        <div class="bg-white rounded-[40px] p-5 shadow-2xl rotate-2">
+
+                            <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=85"
+                                class="w-[320px] sm:w-[390px] h-[450px] object-cover rounded-[30px]"
+                                alt="Beautiful scented candle">
+
+                        </div>
+
+
+                        <!-- floating badge -->
+
+                        <div class="absolute -bottom-5 -left-8 bg-yellow px-6 py-4 rounded-2xl shadow-xl font-bold">
+
+                            ✨ Your Mood,
+                            <br>
+                            Your Scent.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="py-24 bg-white">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+            <div class="text-center max-w-2xl mx-auto">
+
+                <span class="text-pink uppercase tracking-[.25em] text-xs font-extrabold">
+                    WHY GLOW & SCENT
+                </span>
+
+                <h2 class="font-serif text-4xl sm:text-5xl font-bold mt-3">
+                    More Than Just A Candle
+                </h2>
+
+                <p class="text-dark/70 mt-5 text-lg">
+                    Every candle is designed to bring fragrance,
+                    personality and colour into your everyday space.
+                </p>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-7 mt-14">
+
+                <!-- CARD -->
+
+                <div class="bg-pink/10 rounded-3xl p-8 border border-pink/20">
+
+                    <div class="w-14 h-14 bg-pink text-white rounded-2xl flex items-center justify-center text-2xl">
+                        🌿
+                    </div>
+
+                    <h3 class="font-serif text-2xl font-bold mt-5">
+                        Clean Ingredients
+                    </h3>
+
+                    <p class="text-dark/70 mt-3 leading-relaxed">
+                        Premium wax blends and carefully selected fragrances
+                        for a beautiful everyday burn.
+                    </p>
+
+                </div>
+
+
+                <div class="bg-blue/10 rounded-3xl p-8 border border-blue/20">
+
+                    <div class="w-14 h-14 bg-blue text-white rounded-2xl flex items-center justify-center text-2xl">
+                        🏠
+                    </div>
+
+                    <h3 class="font-serif text-2xl font-bold mt-5">
+                        Made For Your Space
+                    </h3>
+
+                    <p class="text-dark/70 mt-3 leading-relaxed">
+                        From bedrooms to coffee tables, our candles
+                        double as beautiful décor.
+                    </p>
+
+                </div>
+
+
+                <div class="bg-yellow/20 rounded-3xl p-8 border border-yellow/40">
+
+                    <div class="w-14 h-14 bg-yellow rounded-2xl flex items-center justify-center text-2xl">
+                        🎀
+                    </div>
+
+                    <h3 class="font-serif text-2xl font-bold mt-5">
+                        Perfect Gifts
+                    </h3>
+
+                    <p class="text-dark/70 mt-3 leading-relaxed">
+                        Thoughtful candles and curated gift boxes
+                        for birthdays, weddings and celebrations.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section id="shop" class="py-24 bg-cream">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+
+                <div>
+
+                    <span class="text-purple uppercase tracking-[.25em] text-xs font-extrabold">
+                        OUR COLLECTION
+                    </span>
+
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold mt-2">
+                        Find Your Favourite Scent
+                    </h2>
+
+                    <p class="text-dark/65 mt-3">
+                        Pick a fragrance that matches your mood.
+                    </p>
+
+                </div>
+
+
+                <!-- FILTERS -->
+
+                <div class="flex flex-wrap gap-2">
+
+                    <button onclick="filterProducts('all')"
+                        class="filter-btn bg-dark text-white px-5 py-3 rounded-full font-bold text-sm">
+
+                        All
+
+                    </button>
+
+                    <button onclick="filterProducts('floral')"
+                        class="filter-btn bg-white border px-5 py-3 rounded-full font-bold text-sm">
+
+                        🌸 Floral
+
+                    </button>
+
+                    <button onclick="filterProducts('fresh')"
+                        class="filter-btn bg-white border px-5 py-3 rounded-full font-bold text-sm">
+
+                        🍋 Fresh
+
+                    </button>
+
+                    <button onclick="filterProducts('sweet')"
+                        class="filter-btn bg-white border px-5 py-3 rounded-full font-bold text-sm">
+
+                        🍰 Sweet
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT GRID -->
+
+            <div id="product-grid"
+                class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+                <!-- PRODUCT 1 -->
+
+                <div class="product-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-pink/10"
+                    data-category="sweet">
+
+                    <div class="relative">
+
+                        <img src="https://images.unsplash.com/photo-1603905179139-db12ab535d6d?auto=format&fit=crop&w=900&q=85"
+                            class="w-full h-80 object-cover"
+                            alt="Vanilla scented candle">
+
+                        <span class="absolute top-4 left-4 bg-pink text-white px-4 py-2 rounded-full text-xs font-bold">
+                            BESTSELLER
+                        </span>
+
+                    </div>
+
+
+                    <div class="p-6">
+
+                        <div class="flex justify-between gap-3">
+
+                            <h3 class="font-serif text-2xl font-bold">
+                                Vanilla Dream
+                            </h3>
+
+                            <span class="text-pink font-extrabold text-xl">
+                                ₹649
+                            </span>
+
+                        </div>
+
+
+                        <p class="text-sm font-semibold text-pink mt-2">
+                            🍦 Vanilla • Caramel • Amber
+                        </p>
+
+
+                        <p class="text-dark/65 mt-3 text-sm leading-relaxed">
+                            A warm, creamy fragrance that makes your room
+                            feel instantly cozy.
+                        </p>
+
+
+                        <button onclick="quickOrder('Vanilla Dream', 649)"
+                            class="w-full mt-5 bg-pink text-white py-3.5 rounded-xl font-bold hover:bg-dark transition">
+
+                            <i class="fa-brands fa-whatsapp mr-2"></i>
+                            Quick Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+
+                <div class="product-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-blue/10"
+                    data-category="fresh">
+
+                    <div class="relative">
+
+                        <img src="https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&fit=crop&w=900&q=85"
+                            class="w-full h-80 object-cover"
+                            alt="Fresh scented candle">
+
+                        <span class="absolute top-4 left-4 bg-blue text-white px-4 py-2 rounded-full text-xs font-bold">
+                            FRESH PICK
+                        </span>
+
+                    </div>
+
+
+                    <div class="p-6">
+
+                        <div class="flex justify-between gap-3">
+
+                            <h3 class="font-serif text-2xl font-bold">
+                                Ocean Breeze
+                            </h3>
+
+                            <span class="text-blue font-extrabold text-xl">
+                                ₹699
+                            </span>
+
+                        </div>
+
+
+                        <p class="text-sm font-semibold text-blue mt-2">
+                            🌊 Sea Salt • Citrus • Musk
+                        </p>
+
+
+                        <p class="text-dark/65 mt-3 text-sm leading-relaxed">
+                            A refreshing clean scent inspired by
+                            cool ocean mornings.
+                        </p>
+
+
+                        <button onclick="quickOrder('Ocean Breeze', 699)"
+                            class="w-full mt-5 bg-blue text-white py-3.5 rounded-xl font-bold hover:bg-dark transition">
+
+                            <i class="fa-brands fa-whatsapp mr-2"></i>
+                            Quick Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+
+                <div class="product-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl border border-purple/10"
+                    data-category="floral">
+
+                    <div class="relative">
+
+                        <img src="https://images.unsplash.com/photo-1596433809252-260c2745dfdd?auto=format&fit=crop&w=900&q=85"
+                            class="w-full h-80 object-cover"
+                            alt="Lavender scented candle">
+
+                        <span class="absolute top-4 left-4 bg-purple text-white px-4 py-2 rounded-full text-xs font-bold">
+                            RELAXING
+                        </span>
+
+                    </div>
+
+
+                    <div class="p-6">
+
+                        <div class="flex justify-between gap-3">
+
+                            <h3 class="font-serif text-2xl font-bold">
+                                Lavender Love
+                            </h3>
+
+                            <span class="text-purple font-extrabold text-xl">
+                                ₹649
+                            </span>
+
+                        </div>
+
+
+                        <p class="text-sm font-semibold text-purple mt-2">
+                            💜 Lavender • Jasmine • Vanilla
+                        </p>
+
+
+                        <p class="text-dark/65 mt-3 text-sm leading-relaxed">
+                            A calming floral blend created for slow evenings
+                            and peaceful nights.
+                        </p>
+
+
+                        <button onclick="quickOrder('Lavender Love', 649)"
+                            class="w-full mt-5 bg-purple text-white py-3.5 rounded-xl font-bold hover:bg-dark transition">
+
+                            <i class="fa-brands fa-whatsapp mr-2"></i>
+                            Quick Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 4 -->
+
+                <div class="product-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl"
+                    data-category="sweet">
+
+                    <div class="relative">
+
+                        <img src="https://images.unsplash.com/photo-1543257580-7269da773bf5?auto=format&fit=crop&w=900&q=85"
+                            class="w-full h-80 object-cover"
+                            alt="Strawberry candle">
+
+                    </div>
+
+
+                    <div class="p-6">
+
+                        <div class="flex justify-between">
+
+                            <h3 class="font-serif text-2xl font-bold">
+                                Strawberry Cake
+                            </h3>
+
+                            <span class="text-pink font-extrabold text-xl">
+                                ₹599
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm font-semibold text-pink mt-2">
+                            🍓 Strawberry • Cream • Sugar
+                        </p>
+
+                        <p class="text-dark/65 mt-3 text-sm">
+                            Sweet, playful and deliciously comforting.
+                        </p>
+
+                        <button onclick="quickOrder('Strawberry Cake', 599)"
+                            class="w-full mt-5 bg-pink text-white py-3.5 rounded-xl font-bold hover:bg-dark transition">
+
+                            <i class="fa-brands fa-whatsapp mr-2"></i>
+                            Quick Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 5 -->
+
+                <div class="product-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl"
+                    data-category="floral">
+
+                    <div class="relative">
+
+                        <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=85"
+                            class="w-full h-80 object-cover"
+                            alt="Rose scented candle">
+
+                    </div>
+
+
+                    <div class="p-6">
+
+                        <div class="flex justify-between">
+
+                            <h3 class="font-serif text-2xl font-bold">
+                                Rose Garden
+                            </h3>
+
+                            <span class="text-purple font-extrabold text-xl">
+                                ₹699
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm font-semibold text-purple mt-2">
+                            🌹 Rose • Peony • Musk
+                        </p>
+
+                        <p class="text-dark/65 mt-3 text-sm">
+                            A soft romantic fragrance inspired by a blooming garden.
+                        </p>
+
+                        <button onclick="quickOrder('Rose Garden', 699)"
+                            class="w-full mt-5 bg-purple text-white py-3.5 rounded-xl font-bold hover:bg-dark transition">
+
+                            <i class="fa-brands fa-whatsapp mr-2"></i>
+                            Quick Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 6 -->
+
+                <div class="product-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl"
+                    data-category="fresh">
+
+                    <div class="relative">
+
+                        <img src="https://images.unsplash.com/photo-1570823635306-250abb06d4b3?auto=format&fit=crop&w=900&q=85"
+                            class="w-full h-80 object-cover"
+                            alt="Citrus scented candle">
+
+                    </div>
+
+
+                    <div class="p-6">
+
+                        <div class="flex justify-between">
+
+                            <h3 class="font-serif text-2xl font-bold">
+                                Citrus Sunshine
+                            </h3>
+
+                            <span class="text-orange-500 font-extrabold text-xl">
+                                ₹599
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm font-semibold text-orange-500 mt-2">
+                            🍊 Orange • Lemon • Bergamot
+                        </p>
+
+                        <p class="text-dark/65 mt-3 text-sm">
+                            Bright, energetic and perfect for mornings.
+                        </p>
+
+                        <button onclick="quickOrder('Citrus Sunshine', 599)"
+                            class="w-full mt-5 bg-orange-500 text-white py-3.5 rounded-xl font-bold hover:bg-dark transition">
+
+                            <i class="fa-brands fa-whatsapp mr-2"></i>
+                            Quick Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GIFTING ================= -->
+
+    <section id="gifting" class="py-24 bg-dark text-white">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+                <div>
+
+                    <span class="text-yellow uppercase tracking-[.25em] text-xs font-extrabold">
+                        GIFT SOMETHING BEAUTIFUL
+                    </span>
+
+                    <h2 class="font-serif text-4xl sm:text-5xl font-bold mt-4">
+                        Make Every Celebration
+                        <span class="text-pink">
+                            Glow.
+                        </span>
+                    </h2>
+
+                    <p class="text-white/75 text-lg mt-5 leading-relaxed">
+
+                        Create memorable wedding favours,
+                        birthday gifts, festive hampers and corporate
+                        gifting sets designed around your occasion.
+
+                    </p>
+
+
+                    <div class="space-y-4 mt-8">
+
+                        <div class="flex gap-4">
+
+                            <div class="text-yellow text-xl">
+                                ✓
+                            </div>
+
+                            <div>
+                                <strong>Custom Labels</strong>
+                                <p class="text-white/60 text-sm">
+                                    Add names, messages and event branding.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex gap-4">
+
+                            <div class="text-yellow text-xl">
+                                ✓
+                            </div>
+
+                            <div>
+                                <strong>Bulk Orders</strong>
+                                <p class="text-white/60 text-sm">
+                                    Special pricing for larger celebrations.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex gap-4">
+
+                            <div class="text-yellow text-xl">
+                                ✓
+                            </div>
+
+                            <div>
+                                <strong>Beautiful Packaging</strong>
+                                <p class="text-white/60 text-sm">
+                                    Ready-to-gift presentation.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#contact"
+                        class="inline-block mt-9 bg-pink text-white px-8 py-4 rounded-full font-bold hover:bg-yellow hover:text-dark transition">
+
+                        Request Gifting Catalogue
+
+                    </a>
+
+                </div>
+
+
+                <div class="bg-white/10 p-4 rounded-[35px]">
+
+                    <img src="https://images.unsplash.com/photo-1543257580-7269da773bf5?auto=format&fit=crop&w=1000&q=85"
+                        class="rounded-[28px] w-full h-[450px] object-cover"
+                        alt="Candle gifting">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REVIEWS ================= -->
+
+    <section id="reviews" class="py-24 bg-white">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+            <div class="text-center">
+
+                <span class="text-pink uppercase tracking-[.25em] text-xs font-extrabold">
+                    CUSTOMER LOVE
+                </span>
+
+                <h2 class="font-serif text-4xl sm:text-5xl font-bold mt-3">
+                    Loved By Candle Lovers
+                </h2>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-7 mt-14">
+
+                <div class="bg-pink/10 p-8 rounded-3xl">
+
+                    <div class="text-yellow text-xl">
+                        ★★★★★
+                    </div>
+
+                    <p class="mt-5 text-dark/75 leading-relaxed">
+                        "The Vanilla Dream smells absolutely amazing.
+                        My entire room feels warm and cozy."
+                    </p>
+
+                    <div class="mt-6 font-bold">
+                        Ananya S.
+                    </div>
+
+                    <div class="text-sm text-dark/50">
+                        Delhi
+                    </div>
+
+                </div>
+
+
+                <div class="bg-blue/10 p-8 rounded-3xl">
+
+                    <div class="text-yellow text-xl">
+                        ★★★★★
+                    </div>
+
+                    <p class="mt-5 text-dark/75 leading-relaxed">
+                        "Beautiful packaging and the candle looks
+                        gorgeous even when it isn't lit."
+                    </p>
+
+                    <div class="mt-6 font-bold">
+                        Riya M.
+                    </div>
+
+                    <div class="text-sm text-dark/50">
+                        Gurgaon
+                    </div>
+
+                </div>
+
+
+                <div class="bg-yellow/20 p-8 rounded-3xl">
+
+                    <div class="text-yellow text-xl">
+                        ★★★★★
+                    </div>
+
+                    <p class="mt-5 text-dark/75 leading-relaxed">
+                        "Ordered these as wedding favours and everyone
+                        loved them. Highly recommended!"
+                    </p>
+
+                    <div class="mt-6 font-bold">
+                        Tanya & Rohan
+                    </div>
+
+                    <div class="text-sm text-dark/50">
+                        Noida
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="py-24 bg-cream">
+
+        <div class="max-w-4xl mx-auto px-5">
+
+            <div class="bg-white rounded-[35px] p-8 sm:p-12 shadow-xl border border-pink/10">
+
+                <div class="text-center">
+
+                    <span class="text-pink uppercase tracking-[.25em] text-xs font-extrabold">
+                        LET'S TALK
+                    </span>
+
+                    <h2 class="font-serif text-4xl font-bold mt-3">
+                        Order Your Candle
+                    </h2>
+
+                    <p class="text-dark/65 mt-3">
+                        Send us your details and we'll get back to you on WhatsApp.
+                    </p>
+
+                </div>
+
+
+                <form onsubmit="handleFormSubmit(event)" class="mt-10 space-y-6">
+
+                    <div class="grid sm:grid-cols-2 gap-5">
+
+                        <div>
+
+                            <label class="font-bold text-sm">
+                                Your Name
+                            </label>
+
+                            <input id="custName"
+                                required
+                                type="text"
+                                placeholder="Enter your name"
+                                class="mt-2 w-full px-4 py-4 rounded-xl border-2 border-gray-100 focus:border-pink outline-none">
+
+                        </div>
+
+
+                        <div>
+
+                            <label class="font-bold text-sm">
+                                Phone Number
+                            </label>
+
+                            <input id="custPhone"
+                                required
+                                type="tel"
+                                placeholder="+91 98765 43210"
+                                class="mt-2 w-full px-4 py-4 rounded-xl border-2 border-gray-100 focus:border-pink outline-none">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="grid sm:grid-cols-2 gap-5">
+
+                        <div>
+
+                            <label class="font-bold text-sm">
+                                Select Candle
+                            </label>
+
+                            <select id="candleChoice"
+                                class="mt-2 w-full px-4 py-4 rounded-xl border-2 border-gray-100 focus:border-pink outline-none">
+
+                                <option>Vanilla Dream - ₹649</option>
+                                <option>Ocean Breeze - ₹699</option>
+                                <option>Lavender Love - ₹649</option>
+                                <option>Strawberry Cake - ₹599</option>
+                                <option>Rose Garden - ₹699</option>
+                                <option>Citrus Sunshine - ₹599</option>
+                                <option>Custom / Bulk Gifting</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div>
+
+                            <label class="font-bold text-sm">
+                                City / Pincode
+                            </label>
+
+                            <input id="custCity"
+                                required
+                                type="text"
+                                placeholder="Delhi, 110001"
+                                class="mt-2 w-full px-4 py-4 rounded-xl border-2 border-gray-100 focus:border-pink outline-none">
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <label class="font-bold text-sm">
+                            Message
+                        </label>
+
+                        <textarea id="custMessage"
+                            rows="4"
+                            placeholder="Tell us what you'd like to order..."
+                            class="mt-2 w-full px-4 py-4 rounded-xl border-2 border-gray-100 focus:border-pink outline-none"></textarea>
+
+                    </div>
+
+
+                    <button type="submit"
+                        class="w-full bg-green text-white py-4 rounded-xl font-extrabold text-lg hover:bg-dark transition">
+
+                        <i class="fa-brands fa-whatsapp mr-2"></i>
+
+                        Send Enquiry on WhatsApp
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-dark text-white py-14">
+
+        <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+            <div class="grid md:grid-cols-3 gap-10">
+
+                <div>
+
+                    <div class="flex items-center gap-3">
+
+                        <div class="w-10 h-10 bg-pink rounded-xl flex items-center justify-center">
+                            🕯️
+                        </div>
+
+                        <span class="font-serif text-2xl font-bold">
+                            Glow & Scent
+                        </span>
+
+                    </div>
+
+
+                    <p class="text-white/60 mt-5 max-w-sm">
+                        Beautiful scented candles created to bring
+                        warmth, colour and happiness into your space.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="font-bold text-lg">
+                        Quick Links
+                    </h3>
+
+                    <div class="space-y-3 mt-5 text-white/60">
+
+                        <a href="#shop" class="block hover:text-pink">
+                            Shop Candles
+                        </a>
+
+                        <a href="#about" class="block hover:text-pink">
+                            Our Story
+                        </a>
+
+                        <a href="#gifting" class="block hover:text-pink">
+                            Gifting
+                        </a>
+
+                        <a href="#contact" class="block hover:text-pink">
+                            Contact
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="font-bold text-lg">
+                        Follow Us
+                    </h3>
+
+                    <div class="flex gap-3 mt-5">
+
+                        <a href="https://instagram.com"
+                            class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-pink transition">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+
+                        <a href="https://wa.me/919876543210"
+                            class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-green transition">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </a>
+
+
+                        <a href="https://pinterest.com"
+                            class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-pink transition">
+
+                            <i class="fa-brands fa-pinterest"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="border-t border-white/10 mt-12 pt-6 text-sm text-white/40 text-center">
+
+                © 2026 Glow & Scent. Made with love & fragrance. 🕯️
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= FLOATING WHATSAPP ================= -->
+
+    <a href="https://wa.me/919876543210?text=Hi%20Glow%20%26%20Scent%2C%20I%20would%20like%20to%20order%20a%20candle."
+        target="_blank"
+        class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-green text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition">
+
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+
+    </a>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        const STUDIO_WHATSAPP = "919876543210";
+
+
+        /* FILTER PRODUCTS */
+
+        function filterProducts(category) {
+
+            const cards = document.querySelectorAll(".product-card");
+
+            cards.forEach(card => {
+
+                if (
+                    category === "all" ||
+                    card.dataset.category === category
+                ) {
+
+                    card.style.display = "block";
+
+                } else {
+
+                    card.style.display = "none";
+
+                }
+
+            });
+
+        }
+
+
+        /* QUICK ORDER */
+
+        function quickOrder(productName, price) {
+
+            const message = encodeURIComponent(
+                `Hello Glow & Scent! 🕯️
+
+I would like to order:
+
+Product: ${productName}
+Price: ₹${price}
+
+Please share availability and payment details.`
+            );
+
+            window.open(
+                `https://wa.me/${STUDIO_WHATSAPP}?text=${message}`,
+                "_blank"
+            );
+
+        }
+
+
+        /* FORM */
+
+        function handleFormSubmit(event) {
+
+            event.preventDefault();
+
+            const name =
+                document.getElementById("custName").value;
+
+            const phone =
+                document.getElementById("custPhone").value;
+
+            const product =
+                document.getElementById("candleChoice").value;
+
+            const city =
+                document.getElementById("custCity").value;
+
+            const notes =
+                document.getElementById("custMessage").value ||
+                "No additional message";
+
+
+            const message = encodeURIComponent(
+
+                `*New Order - Glow & Scent* 🕯️
+
+👤 Name: ${name}
+
+📱 Phone: ${phone}
+
+🕯️ Candle: ${product}
+
+📍 City/Pincode: ${city}
+
+📝 Message: ${notes}
+
+Please share availability and payment details.`
+
+            );
+
+
+            window.open(
+                `https://wa.me/${STUDIO_WHATSAPP}?text=${message}`,
+                "_blank"
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>
